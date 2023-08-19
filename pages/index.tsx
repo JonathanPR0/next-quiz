@@ -62,7 +62,7 @@ export default function Home() {
   }, [idQuestions])
 
   return question && (
-    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", height: "100vh" }}>
+    <div style={{ margin: "0 auto" }}>
       <Quiz question={question} isTheLastQuestion={idNextQuestion() === undefined} onResponse={onResponse} goNextQuestion={nextStep} />
     </div>
   )
