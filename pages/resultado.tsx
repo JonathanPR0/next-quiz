@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import styles from "../styles/resultados.module.css"
+import styles from "../styles/Resultados.module.css"
 import React from 'react'
 import Statistics from '../components/Statistics'
 import Button from '../components/Button'
@@ -16,10 +16,10 @@ export default function Resultado() {
       <h1>Resultado Final</h1>
       <div style={{ display: "flex", gap: "2rem" }}>
         <Statistics text='Perguntas' value={total} />
-        <Statistics text='Certas' value={rightAnswers} backgroundColor='#9cd2a4'/>
-        <Statistics text='Percentual' value={`${percents}%`} backgroundColor='#de6a33'/>
+        <Statistics text='Certas' value={rightAnswers} backgroundColor='#9cd2a4' />
+        <Statistics text='Percentual' value={`${percents}%`} backgroundColor='#de6a33' />
       </div>
-      <Button href='/' text='Tente Novamente'/>
+      <Button href='/' text='Tente Novamente' />
     </div>
   )
 }
