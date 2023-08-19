@@ -4,7 +4,8 @@ import QuestionModel from "../model/question";
 import Quiz from "../components/Quiz";
 import { useRouter } from "next/router";
 
-const BASE_URL = "https://jon-next-quiz.vercel.app/api"
+const BASE_URL = "http://localhost:3000/api"
+// const BASE_URL = "https://jon-next-quiz.vercel.app/api"
 
 export default function Home() {
   const router = useRouter()
@@ -16,7 +17,6 @@ export default function Home() {
   async function loadIdQuestions() {
     const resp = await fetch(`${BASE_URL}/quiz`)
     const loadIdQuestions = await resp.json()
-    console.log(loadIdQuestions);
 
     setIdQuestions(loadIdQuestions)
   }
@@ -37,7 +37,6 @@ export default function Home() {
   }
   function nextStep() {
     const nextId = idNextQuestion();
-    console.log(nextId);
 
     nextId ? goNextQuestion(nextId) : finish()
   }

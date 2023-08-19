@@ -5,4 +5,19 @@
   justify-content: center;
   height: 100vh;
   font-size: 2rem;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media (max-width: 640px) {
+  .resultados {
+    font-size: 1.4rem;
+  }
+  .container {
+    gap: 1.25rem;
+  }
 }

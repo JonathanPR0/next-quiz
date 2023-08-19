@@ -14,7 +14,7 @@ export default function Resultado() {
   return (
     <div className={styles.resultados}>
       <h1>Resultado Final</h1>
-      <div style={{ display: "flex", gap: "2rem" }}>
+      <div className={styles.container}>
         <Statistics text='Perguntas' value={total} />
         <Statistics text='Certas' value={rightAnswers} backgroundColor='#9cd2a4' />
         <Statistics text='Percentual' value={`${percents}%`} backgroundColor='#de6a33' />

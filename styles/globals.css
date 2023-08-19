@@ -7,7 +7,9 @@ body {
   background-color: #6c54d8;
   color: #fefefe;
 }
-
+body {
+  padding: 1.25rem;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -16,4 +18,5 @@ a {
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  word-break: break-word;
 }
