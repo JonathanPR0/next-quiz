@@ -4,8 +4,8 @@ import QuestionModel from "../model/question";
 import Quiz from "../components/Quiz";
 import { useRouter } from "next/router";
 
-const BASE_URL = "http://localhost:3000/api"
-// const BASE_URL = "https://jon-next-quiz.vercel.app/api"
+// const BASE_URL = "http://localhost:3000/api"
+const BASE_URL = "https://jon-next-quiz.vercel.app/api"
 
 export default function Home() {
   const router = useRouter()
